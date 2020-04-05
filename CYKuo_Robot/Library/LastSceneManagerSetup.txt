@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scene/HTC_D435_new_arm2.unity
+  isLoaded: 1
+  isActive: 1

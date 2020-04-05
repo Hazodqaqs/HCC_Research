@@ -1,0 +1,35 @@
+﻿// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+struct data {
+	float a;
+	float b;
+	float c;
+
+};
+
+Texture2D<float4> InputTexture;
+RWStructuredBuffer<data> OutputBuffer;
+
+[numthreads(16,12,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    // TODO: insert actual code here!
+	
+	float d = InputTexture[id.xy].r * 100;
+	if (d < 0.2 || d>5) {
+
+		d = 0;
+		float x = (float)((id.x - 327.612) * d / 617.823);
+		float y = (float)((id.y - 239.766) * d / 618.296);
+		OutputBuffer[id.x + id.y * 640].a = x;
+		OutputBuffer[id.x + id.y * 640].b = y;
+		OutputBuffer[id.x + id.y * 640].c = d;
+	}
+	else {
+		float x = (float)((id.x - 327.612) * d / 617.823);
+		float y = (float)((id.y - 239.766) * d / 618.296);
+		OutputBuffer[id.x + id.y * 640].a = x;
+		OutputBuffer[id.x + id.y * 640].b = y;
+		OutputBuffer[id.x + id.y * 640].c = d;
+	}
+}
