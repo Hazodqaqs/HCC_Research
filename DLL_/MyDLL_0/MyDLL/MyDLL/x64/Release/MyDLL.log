@@ -1,0 +1,44 @@
+﻿  stdafx.cpp
+  dllmain.cpp
+  MyDLL.cpp
+c:\users\aprlab\desktop\orbslam-windows-master\thirdparty\dbow2\dutils\random.h(155): warning C4267: 'return': 將 'size_t' 轉換為 'unsigned int'，資料可能遺失
+c:\users\aprlab\desktop\orbslam-windows-master\include\orbextractor.h(67): warning C4244: 'return': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+c:\users\aprlab\desktop\orbslam-windows-master\thirdparty\eigen\eigen\src\core\arch\cuda\half.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+c:\users\aprlab\desktop\orbslam-windows-master\thirdparty\g2o\g2o\types\types_six_dof_expmap.h(126): warning C4244: '引數': 將 'double' 轉換為 'const float'，由於類型不同，可能導致資料遺失
+c:\users\aprlab\desktop\orbslam-windows-master\include\localmapping.h(72): warning C4267: 'return': 將 'size_t' 轉換為 'int'，資料可能遺失
+e:\r07522616_hcc\research\orbslam_program\mydll_0\mydll\mydll\mydll.h(42): warning C4267: '正在初始化': 將 'size_t' 轉換為 'int'，資料可能遺失
+e:\r07522616_hcc\research\orbslam_program\mydll_0\mydll\mydll\mydll.cpp(128): warning C4267: 'return': 將 'size_t' 轉換為 'int'，資料可能遺失
+e:\r07522616_hcc\research\orbslam_program\mydll_0\mydll\mydll\mydll.cpp(215): warning C4267: '=': 將 'size_t' 轉換為 'int'，資料可能遺失
+e:\r07522616_hcc\research\orbslam_program\mydll_0\mydll\mydll\mydll.cpp(232): warning C4267: '=': 將 'size_t' 轉換為 'int'，資料可能遺失
+c:\users\aprlab\desktop\orbslam-windows-master\thirdparty\g2o\g2o\core\base_vertex.h(99): warning C4267: 'return': 將 'size_t' 轉換為 'int'，資料可能遺失
+  c:\users\aprlab\desktop\orbslam-windows-master\thirdparty\g2o\g2o\core\base_vertex.h(99): note: 編譯 類別 樣板 成員函式 'int g2o::BaseVertex<7,g2o::Sim3>::stackSize(void) const' 時
+  c:\users\aprlab\desktop\orbslam-windows-master\thirdparty\g2o\g2o\types\types_seven_dof_expmap.h(49): note: 查看要編譯的 類別 樣板 具現化 'g2o::BaseVertex<7,g2o::Sim3>' 參考
+  Orb_SLAM.cpp
+c:\users\aprlab\desktop\orbslam-windows-master\thirdparty\dbow2\dutils\random.h(155): warning C4267: 'return': 將 'size_t' 轉換為 'unsigned int'，資料可能遺失
+c:\users\aprlab\desktop\orbslam-windows-master\include\orbextractor.h(67): warning C4244: 'return': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+c:\users\aprlab\desktop\orbslam-windows-master\thirdparty\eigen\eigen\src\core\arch\cuda\half.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+c:\users\aprlab\desktop\orbslam-windows-master\thirdparty\g2o\g2o\types\types_six_dof_expmap.h(126): warning C4244: '引數': 將 'double' 轉換為 'const float'，由於類型不同，可能導致資料遺失
+c:\users\aprlab\desktop\orbslam-windows-master\include\localmapping.h(72): warning C4267: 'return': 將 'size_t' 轉換為 'int'，資料可能遺失
+e:\r07522616_hcc\research\orbslam_program\mydll_0\mydll\mydll\orb_slam.cpp(46): warning C4267: '引數': 將 'size_t' 轉換為 'int'，資料可能遺失
+e:\r07522616_hcc\research\orbslam_program\mydll_0\mydll\mydll\orb_slam.cpp(55): warning C4267: '=': 將 'size_t' 轉換為 'uint16_t'，資料可能遺失
+e:\r07522616_hcc\research\orbslam_program\mydll_0\mydll\mydll\orb_slam.cpp(64): warning C4244: '=': 將 'unsigned long' 轉換為 'uint16_t'，由於類型不同，可能導致資料遺失
+e:\r07522616_hcc\research\orbslam_program\mydll_0\mydll\mydll\orb_slam.cpp(85): warning C4267: '引數': 將 'size_t' 轉換為 'int'，資料可能遺失
+e:\r07522616_hcc\research\orbslam_program\mydll_0\mydll\mydll\orb_slam.cpp(277): warning C4244: '引數': 將 'double' 轉換為 'const _Ty'，由於類型不同，可能導致資料遺失
+          with
+          [
+              _Ty=float
+          ]
+e:\r07522616_hcc\research\orbslam_program\mydll_0\mydll\mydll\orb_slam.cpp(364): warning C4244: '引數': 將 'double' 轉換為 'const _Ty'，由於類型不同，可能導致資料遺失
+          with
+          [
+              _Ty=float
+          ]
+c:\users\aprlab\desktop\orbslam-windows-master\thirdparty\g2o\g2o\core\base_vertex.h(99): warning C4267: 'return': 將 'size_t' 轉換為 'int'，資料可能遺失
+  c:\users\aprlab\desktop\orbslam-windows-master\thirdparty\g2o\g2o\core\base_vertex.h(99): note: 編譯 類別 樣板 成員函式 'int g2o::BaseVertex<7,g2o::Sim3>::stackSize(void) const' 時
+  c:\users\aprlab\desktop\orbslam-windows-master\thirdparty\g2o\g2o\types\types_seven_dof_expmap.h(49): note: 查看要編譯的 類別 樣板 具現化 'g2o::BaseVertex<7,g2o::Sim3>' 參考
+  VideoCap.cpp
+     正在建立程式庫 E:\R07522616_HCC\Research\ORBSLAM_Program\MyDLL_0\MyDLL\x64\Release\MyDLL.lib 和物件 E:\R07522616_HCC\Research\ORBSLAM_Program\MyDLL_0\MyDLL\x64\Release\MyDLL.exp
+  正在產生程式碼
+  All 1113 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成程式碼產生
+  MyDLL.vcxproj -> E:\R07522616_HCC\Research\ORBSLAM_Program\MyDLL_0\MyDLL\x64\Release\MyDLL.dll

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>C:\Users\APRILAB\Desktop\CYK Project\T\TESTSLAM\g2o-master\EXTERNAL\csparse;C:\Users\APRILAB\Desktop\CYK Project\T\TESTSLAM\g2o-master;C:\Program Files\PCL 1.6.0\3rdParty\Boost\include;C:\Program Files\PCL 1.6.0\3rdParty\eigen-eigen-323c052e1731;C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include;C:\Program Files\OpenNI\Include;C:\Program Files\PCL 1.6.0\3rdParty\Qhull\include;C:\Program Files\PCL 1.6.0\3rdParty\VTK\include\vtk-5.8;C:\opencv3_4_4\build\include;C:\Program Files\PCL 1.6.0\include\pcl-1.6;$(IncludePath)</IncludePath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <LibraryPath>C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8;C:\Program Files\PCL 1.6.0\3rdParty\Qhull\lib;C:\Program Files\OpenNI\Lib64;C:\Program Files\PCL 1.6.0\3rdParty\FLANN\lib;C:\Program Files\PCL 1.6.0\3rdParty\Boost\lib;C:\Program Files\PCL 1.6.0\lib;C:\opencv3_4_4\build\x64\vc15\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

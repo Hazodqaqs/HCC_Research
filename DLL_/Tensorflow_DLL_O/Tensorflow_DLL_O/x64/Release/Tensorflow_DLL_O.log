@@ -1,0 +1,17 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: 中繼目錄 (x64\Release\) 包含從其他專案 (Tensorflow_DLL_O.vcxproj) 共用的檔案。這可能導致錯誤的清除和重建行為。
+  pch.cpp
+  dllmain.cpp
+  Tensorflow_DLL.cpp
+d:\anaconda\envs\tf_gpu\lib\site-packages\numpy\core\include\numpy\npy_1_7_deprecated_api.h(12): warning Msg: Using deprecated NumPy API, disable it by #defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION
+e:\r07522616_hcc\research\orbslam_program\tensorflow_dll_o\tensorflow_dll_o\tensorflow_dll.cpp(35): warning C4244: '正在初始化': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+     正在建立程式庫 E:\R07522616_HCC\Research\ORBSLAM_Program\Tensorflow_DLL_O\x64\Release\TENSORFLOWDLLO.lib 和物件 E:\R07522616_HCC\Research\ORBSLAM_Program\Tensorflow_DLL_O\x64\Release\TENSORFLOWDLLO.exp
+  正在產生程式碼
+e:\r07522616_hcc\research\orbslam_program\tensorflow_dll_o\tensorflow_dll_o\tensorflow_dll.cpp(275): warning C4715: 'Train_data': 不是所有控制路徑都傳回值
+e:\r07522616_hcc\research\orbslam_program\tensorflow_dll_o\tensorflow_dll_o\tensorflow_dll.cpp(243): warning C4715: 'Model_load_weight': 不是所有控制路徑都傳回值
+e:\r07522616_hcc\research\orbslam_program\tensorflow_dll_o\tensorflow_dll_o\tensorflow_dll.cpp(168): warning C4715: 'Print_list': 不是所有控制路徑都傳回值
+e:\r07522616_hcc\research\orbslam_program\tensorflow_dll_o\tensorflow_dll_o\tensorflow_dll.cpp(151): warning C4715: 'Get_default_data': 不是所有控制路徑都傳回值
+e:\r07522616_hcc\research\orbslam_program\tensorflow_dll_o\tensorflow_dll_o\tensorflow_dll.cpp(224): warning C4715: 'Initialize_ALL': 不是所有控制路徑都傳回值
+e:\r07522616_hcc\research\orbslam_program\tensorflow_dll_o\tensorflow_dll_o\tensorflow_dll.cpp(330): warning C4715: 'Predict_model': 不是所有控制路徑都傳回值
+  All 447 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成程式碼產生
+  Tensorflow_DLL_O.vcxproj -> E:\R07522616_HCC\Research\ORBSLAM_Program\Tensorflow_DLL_O\x64\Release\TENSORFLOWDLLO.dll

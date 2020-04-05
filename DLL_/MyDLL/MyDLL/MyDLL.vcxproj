@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{9266DC63-116C-4184-995A-E28DE22EF59A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MyDLL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\opencv3_4_4\build\include\opencv2;D:\opencv3_4_4\build\include\opencv;D:\opencv3_4_4\build\include;C:\Program Files\PCL 1.9.1\include\pcl-1.9;C:\Program Files\PCL 1.9.1\3rdParty\Boost\include\boost-1_68;C:\Program Files\PCL 1.9.1\3rdParty\;C:\Users\AprLab\Desktop\orbslam-windows-master\include;C:\Users\AprLab\Desktop\orbslam-windows-master;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\include;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\external\glew\include;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\DBoW2;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\src\include;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\DBoW2\DUtils;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\DBoW2\DBoW2;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\eigen;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\g2o;C:\Program Files\PCL 1.9.1\3rdParty\FLANN\include;C:\Program Files\PCL 1.9.1\3rdParty\VTK\include\vtk-6.3;C:\Program Files\PCL 1.9.1\3rdParty\Qhull\include;C:\Program Files (x86)\Intel RealSense SDK 2.0\include;E:\Unity\Editor\Data\PluginAPI;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\local\boost_1_62_0\lib64-msvc-14.0;C:\Program Files\PCL 1.9.1\lib;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\external\libpng\lib;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\external\libjpeg\lib;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\external\zlib\lib;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\src\Release;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\g2o\build\Release;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\DBoW2\lib\Release;C:\opencv3_4_4\build\x64\vc15\lib;C:\opencv3_4_4\build\x64\vc14\lib;C:\Users\AprLab\Desktop\orbslam-windows-master\build\Release;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\external\glew\lib;C:\Program Files (x86)\Intel RealSense SDK 2.0\include;E:\Unity\Editor\Data\PluginAPI;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\opencv3_4_4\build\include;D:\opencv3_4_4\build\include\opencv;D:\opencv3_4_4\build\include\opencv2;C:\Program Files\PCL 1.9.1\include\pcl-1.9;C:\Program Files\PCL 1.9.1\3rdParty\Boost\include\boost-1_68;C:\Program Files\PCL 1.9.1\3rdParty\;C:\Users\AprLab\Desktop\orbslam-windows-master\include;C:\Users\AprLab\Desktop\orbslam-windows-master;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\include;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\external\glew\include;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\DBoW2;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\src\include;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\DBoW2\DUtils;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\DBoW2\DBoW2;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\eigen;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\g2o;C:\Program Files\PCL 1.9.1\3rdParty\FLANN\include;C:\Program Files\PCL 1.9.1\3rdParty\VTK\include\vtk-6.3;C:\Program Files\PCL 1.9.1\3rdParty\Qhull\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\PCL 1.9.1\lib;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\external\libpng\lib;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\external\libjpeg\lib;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\external\zlib\lib;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\src\Release;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\g2o\build\Release;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\DBoW2\lib\Release;C:\opencv3_4_4\build\x64\vc15\lib;C:\opencv3_4_4\build\x64\vc14\lib;C:\Users\AprLab\Desktop\orbslam-windows-master\build\Release;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\external\glew\lib;C:\Users\AprLab\Desktop\orbslam-windows-master\lib\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\Anaconda\envs\tf_gpu\include;D:\Anaconda\envs\tf_gpu\Lib\site-packages\numpy\core\include;D:\opencv3_4_4\build\include;E:\R07522616_HCC\Research\ORBSLAM_Program\Tensorflow_test\include;C:\opt\python27amd64\include;C:\opt\ros\melodic\x64\include;C:\catkin_ws\install\include;E:\R07522616_HCC\Research\ORBSLAM_Program\MyDLL\include;D:\opencv3_4_4\build\include\opencv2;D:\opencv3_4_4\build\include\opencv;C:\Program Files\PCL 1.9.1\include\pcl-1.9;C:\Program Files\PCL 1.9.1\3rdParty\Boost\include\boost-1_68;C:\Program Files\PCL 1.9.1\3rdParty\;C:\Users\AprLab\Desktop\orbslam-windows-master\include;C:\Users\AprLab\Desktop\orbslam-windows-master;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\include;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\external\glew\include;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\DBoW2;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\src\include;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\DBoW2\DUtils;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\DBoW2\DBoW2;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\eigen;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\g2o;C:\Program Files\PCL 1.9.1\3rdParty\FLANN\include;C:\Program Files\PCL 1.9.1\3rdParty\VTK\include\vtk-6.3;C:\Program Files\PCL 1.9.1\3rdParty\Qhull\include;C:\Program Files (x86)\Intel RealSense SDK 2.0\include;C:\Boost\boost_1_71_0\stage\x64\lib;C:\Program Files\OpenNI2\Lib;C:\Users\AprLab\Desktop\orbslam-windows-master\build\ORB_SLAM2.dir\Release;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\R07522616_HCC\Research\ORBSLAM_Program\Tensorflow_test\lib;C:\opt\python27amd64\libs;D:\Anaconda\envs\tf_gpu;D:\Anaconda\envs\tf_gpu\libs;C:\opt\ros\melodic\x64\lib;D:\opencv3_4_4\build\x64\vc15\lib;C:\Program Files (x86)\Intel RealSense SDK 2.0\lib\x64;C:\catkin_ws\install\lib;E:\R07522616_HCC\Research\ORBSLAM_Program\MyDLL\lib;C:\Program Files\PCL 1.9.1\lib;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\external\libpng\lib;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\external\libjpeg\lib;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\external\zlib\lib;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\external\glew\lib;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\x64\Release;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\build\src\pangolin.dir\Release;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\g2o\build\x64\Release;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\DBoW2\lib\Release;D:\opencv3_4_4\build\x64\vc14\lib;C:\Users\AprLab\Desktop\orbslam-windows-master\build\x64\Release;C:\Users\AprLab\Desktop\orbslam-windows-master\build\Release;C:\Program Files (x86)\Intel RealSense SDK 2.0\include;C:\Users\AprLab\Desktop\orbslam-windows-master\lib\Release;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\Pangolin\lib\Release;C:\Users\AprLab\Desktop\orbslam-windows-master\Thirdparty\g2o\lib\Release;C:\Users\AprLab\Desktop\orbslam-windows-master\build\ORB_SLAM2.dir\Release;C:\Users\AprLab\Desktop\orbslam-windows-master\include;C:\Boost\boost_1_71_0\stage\x64\lib;C:\Program Files\OpenNI2\Lib;C:\Users\AprLab\Desktop\orbslam-windows-master\build\rgbd_tum.dir\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;MYDLL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;MYDLL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkViewsInfovis-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkImagingGeneral-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersCore-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOMINC-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOSQL-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkfreetype-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingLabel-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkfreetype-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkoggtheora-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersTexture-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkInfovisCore-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOEnSight-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkImagingMath-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOMovie-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkDomainsChemistry-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonSystem-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersVerdict-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingLabel-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkInfovisLayout-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonColor-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOXML-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOInfovis-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersModeling-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOExportOpenGL-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOExport-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkpng-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkImagingSources-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersStatistics-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkParallelCore-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersStatistics-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkImagingStatistics-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingCore-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOPLY-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkInteractionImage-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOCore-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingAnnotation-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkproj4-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOSQL-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkDICOMParser-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOTecplotTable-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkImagingColor-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtktiff-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkjpeg-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersProgrammable-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersFlowPaths-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkViewsCore-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersCore-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkImagingStatistics-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonMisc-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\.ipynb_checkpoints.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkNetCDF-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersParallel-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingLIC-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOLSDyna-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOParallelXML-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOLegacy-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIONetCDF-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonDataModel-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersImaging-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtklibharu-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOXML-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkverdict-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOAMR-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkmetaio-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIONetCDF-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOImage-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersExtraction-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOXMLParser-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkgl2ps-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkexoIIc-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOParallelXML-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtknetcdfcpp-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkgl2ps-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOXMLParser-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOMovie-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonMath-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersGeometry-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkInteractionStyle-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkImagingSources-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtknetcdfcpp-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonComputationalGeometry-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingVolumeOpenGL-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingVolume-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonTransforms-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOGeometry-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersGeometry-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingGL2PS-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtksqlite-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersGeneral-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOImage-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOEnSight-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonMath-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersVerdict-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtktiff-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkjpeg-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtklibharu-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkImagingMorphological-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkjsoncpp-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkViewsContext2D-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersSMP-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersAMR-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingLIC-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtksqlite-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkexoIIc-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersParallel-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersSources-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersAMR-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingLOD-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOInfovis-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkzlib-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersParallelImaging-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOExodus-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkImagingFourier-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkInfovisLayout-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkzlib-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonSystem-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkhdf5_hl-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonTransforms-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkViewsContext2D-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingOpenGL-8.1-gd.lib;realsense2.lib;comctl32.lib;wsock32.lib;glu32.lib;opencv_world344.lib;ORB_SLAM2.lib;DBoW2.lib;g2o.lib;pangolin.lib;opengl32.lib;glew.lib;jpeg.lib;libpng16_static.lib;zlibstatic.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;MYDLL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;MYDLL_EXPORTS;_WINDOWS;_USRDLL;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libboost_filesystem-vc141-mt-sgd-x64-1_66.lib;libboost_chrono-vc141-mt-sgd-x64-1_66.lib;libboost_date_time-vc141-mt-sgd-x64-1_66.lib;libboost_system-vc141-mt-sgd-x64-1_66.lib;libboost_thread-vc141-mt-sgd-x64-1_66.lib;libboost_regex-vc141-mt-sgd-x64-1_66.lib;realsense2.lib;compressed_depth_image_transport.lib;compressed_image_transport.lib;image_transport_plugins.lib;image_transport.lib;image_publisher.lib;cv_bridge.lib;roscpp.lib;roscpp_serialization.lib;cpp_common.lib;rosconsole.lib;rosconsole_backend_interface.lib;rosconsole_print.lib;rostime.lib;xmlrpcpp.lib;python27.lib;opencv_world344.lib;opencv_world344d.lib;OpenNI2.lib;zlibstatic.lib;libpng16_static.lib;System.obj;jpeg.lib;glew.lib;opengl32.lib;pangolin.lib;g2o.lib;DBoW2.lib;ORB_SLAM2.lib;comctl32.lib;wsock32.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkViewsInfovis-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkImagingGeneral-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersCore-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOMINC-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOSQL-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkfreetype-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingLabel-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkfreetype-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkoggtheora-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersTexture-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkInfovisCore-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOEnSight-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkImagingMath-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOMovie-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkDomainsChemistry-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonSystem-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersVerdict-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingLabel-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkInfovisLayout-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonColor-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOXML-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOInfovis-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersModeling-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOExportOpenGL-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOExport-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkpng-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkImagingSources-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersStatistics-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkParallelCore-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersStatistics-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkImagingStatistics-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingCore-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOPLY-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkInteractionImage-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOCore-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingAnnotation-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkproj4-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOSQL-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkDICOMParser-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOTecplotTable-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkImagingColor-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtktiff-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkjpeg-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersProgrammable-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersFlowPaths-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkViewsCore-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersCore-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkImagingStatistics-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonMisc-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkNetCDF-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersParallel-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingLIC-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOLSDyna-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOParallelXML-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOLegacy-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIONetCDF-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonDataModel-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersImaging-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtklibharu-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOXML-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkverdict-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOAMR-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkmetaio-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIONetCDF-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOImage-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersExtraction-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOXMLParser-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkgl2ps-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkexoIIc-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOParallelXML-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtknetcdfcpp-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkgl2ps-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOXMLParser-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOMovie-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonMath-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersGeometry-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkInteractionStyle-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkImagingSources-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtknetcdfcpp-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonComputationalGeometry-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingVolumeOpenGL-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingVolume-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonTransforms-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOGeometry-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersGeometry-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingGL2PS-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtksqlite-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersGeneral-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOImage-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOEnSight-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonMath-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersVerdict-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtktiff-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkjpeg-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtklibharu-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkImagingMorphological-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkjsoncpp-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkViewsContext2D-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersSMP-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersAMR-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingLIC-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtksqlite-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkexoIIc-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersParallel-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersSources-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersAMR-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingLOD-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOInfovis-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkzlib-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkFiltersParallelImaging-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkIOExodus-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkImagingFourier-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkInfovisLayout-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkzlib-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonSystem-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkhdf5_hl-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkCommonTransforms-8.1.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkViewsContext2D-8.1-gd.lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib\vtkRenderingOpenGL-8.1-gd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\AprLab\Desktop\orbslam-windows-master\build\ORB_SLAM2.dir\$(IntDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkStatus>true</LinkStatus>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="MyDLL.h" />
+    <ClInclude Include="Orb_SLAM.h" />
+    <ClInclude Include="ROS.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="MyDLL.cpp" />
+    <ClCompile Include="Orb_SLAM.cpp" />
+    <ClCompile Include="ROS.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
