@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/HTC_D435_new_arm2.unity
+- path: Assets/Scene/Remote_Robot.unity
   isLoaded: 1
   isActive: 1

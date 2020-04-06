@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scene/HTC_D435_new_arm2.unity
+    path: Assets/Scene/Remote_Robot.unity
     guid: 19d06f9415349844f9224ca4d5dc3a4e
   m_configObjects: {}
